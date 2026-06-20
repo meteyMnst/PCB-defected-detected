@@ -1,25 +1,45 @@
-PCB-Defected-Detected
+# 🔍 PCB Defect Detection (PCB Hata Tespiti)
 
-💡 Drive download link: https://drive.google.com/drive/folders/15SdTuzhOsE5LtvSSjJcqdYyCiyC7-AM6?usp=drive_link
+
+
+## 📖 Proje Özeti
+
+Bu proje, Baskılı Devre Kartları (PCB) üzerinde sıkça karşılaşılan 6 farklı hata türünü tespit etmeyi amaçlamaktadır. Hataları otomatik olarak bulmak ve sınıflandırmak için derin öğrenme tabanlı nesne tespiti yöntemleri kullanılmıştır. 
+
+Özel bir PCB veri seti üzerinde **YOLOv8n** ve **YOLOv10n** modelleri eğitilmiş ve test edilmiştir. Temel hedefimiz, elektronik üretim hatlarında daha hızlı ve çok daha doğru hata tespiti sağlayarak kalite kontrol süreçlerini iyileştirmek ve otomatize etmektir.
 
 ---
-🔍 Project Overview
 
-This project aims to detect six common defect types found on Printed Circuit Boards (PCBs).
-We used deep learning-based object detection methods to automatically locate and classify these defects.
-Two models, YOLOv8n and YOLOv10n, were trained and tested on a specialized PCB dataset.
-The goal is to improve quality control by ensuring faster, more accurate defect detection in electronics manufacturing.
+## 🛠️ Proje Detayları
+
+Sistem, üretim bantlarında ve gerçek zamanlı kalite kontrol senaryolarında çalışmaya uygun, endüstriyel kullanıma hazır bir yapıda tasarlanmıştır.
+
+Modelimizin tespit edebildiği **6 farklı hata kategorisi** şunlardır:
+
+- 🕳️ **Missing Hole** (Eksik Delik)
+- 🐭 **Mouse Bite** (Bakır Kopması)
+- 🔌 **Open Circuit** (Açık Devre)
+- ⚡ **Short** (Kısa Devre)
+- 🏔️ **Spur** (Çıkıntı)
+- 🔗 **Spurious Copper** (İstenmeyen/Gereksiz Bakır)
+
 ---
 
-🔍 Project details
-- PCB error detection with yolo available for production lines
-- There are 6 categories for data:
-   - Missing Hole
-   - Mouse Bite
-   - Open Circuit
-   - Short
-   - Spur
-   - Spurious Copper
---- 
-👤 Contribute
-You can send a pull request or open an issue to support. The project is open source and open to contributions.🛠️
+## 📂 Veri Seti ve Model Dosyaları
+
+Proje dosyalarına, eğitilmiş model ağırlıklarına ve veri setine aşağıdaki bağlantı üzerinden erişebilirsiniz:
+
+💡 **[Google Drive İndirme Bağlantısı](https://drive.google.com/drive/folders/15SdTuzhOsE5LtvSSjJcqdYyCiyC7-AM6?usp=drive_link)**
+
+---
+
+## 🤝 Katkıda Bulunma (Contributing)
+
+Bu proje tamamen **açık kaynaklıdır** ve topluluk katkılarına açıktır! 
+
+Projeye destek olmak veya geliştirmek isterseniz:
+1. Projeyi forklayabilirsiniz.
+2. Değişikliklerinizi yapıp bir **Pull Request (PR)** gönderebilirsiniz.
+3. Karşılaştığınız hatalar veya yeni özellik önerileri için **Issue** açabilirsiniz.
+
+Katkılarınız için şimdiden teşekkürler! 🚀
